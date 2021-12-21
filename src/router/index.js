@@ -5,6 +5,7 @@ import Home from '../views/Home.vue'
 import Beobachtungsboegen from "../views/Beobachtungsboegen.vue"
 import Login from "../views/Login.vue"
 import Register from "../views/Register.vue"
+import Bearbeiten from "../views/Bearbeiten.vue"
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,11 @@ const routes = [
     path: "/register",
     name: "Register",
     component: Register
+  },
+  {
+    path: "/beobachtungsboegen/:kindID",
+    name: "Bearbeiten",
+    component: Bearbeiten
   }
 ]
 

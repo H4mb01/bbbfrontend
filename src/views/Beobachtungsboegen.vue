@@ -1,7 +1,12 @@
 <template>
     <div class="beobachtungsboegen">
-        <h1 v-if="authenitcated" > {{ username }}s Beobachtungsbögen</h1>
+        <h1 v-if="authenticated" > {{ username }}s Beobachtungsbögen</h1>
         <div v-if="authenticated" class="content">
+            <h2>Hallo {{username}}, das hier sind deine Kinder:</h2>
+            <KindOverview v-for="kind in kinderDaten" :key="`${username}s-kind-${kind._id}`" :data="kind" />
+
+
+            <!--
             <Kinder :kinder="kinder" v-on:click-kind="showKind($event)" />
             <button @click="showBeobachtungsbogen = showBeobachtungsbogen ? false : true" >show</button>
             <button @click="showBeschreibungen = showBeschreibungen ? false : true" >Beschreibungen ein-/ausblenden</button>
@@ -10,20 +15,20 @@
             <Beobachtungsbogen v-if="showBeobachtungsbogen" :kind="kind" :bildungsbereiche="bildungsbereiche" :showBeschreibungen="showBeschreibungen"
             :change="change" />
             <button @click="saveChanges()">save</button>
+
+            -->
         </div>
     </div>
 </template>
 
 <script>
-import Beobachtungsbogen from "../components/beobachtungsboegen/Beobachtungsbogen.vue"
-import Kinder from "../components/beobachtungsboegen/Kinder.vue"
+import KindOverview from "../components/beobachtungsboegen/KindOverview.vue"
 
 import jsondata from "../json/bildungsbereiche.json"
 export default {
     name: "beobachtungsboegen",
     components: {
-        Beobachtungsbogen,
-        Kinder
+        KindOverview
     },
     data() {
         return {
@@ -34,9 +39,9 @@ export default {
             bildungsbereiche: jsondata.Bildungsbereiche,
             change: false,
             username: "",
-            kinder: ["Max", "Moritz", "Julia", "Eva"],
-            kind: "",
-            authenticated: false
+            kinder: ["Max", "Maria", "Finley", "Hacer"],
+            authenticated: false,
+            kinderDaten: {}
         }
     },
     async mounted() {
@@ -49,6 +54,7 @@ export default {
             this.$router.push("/login")
         }
         this.username = this.$session.get("username")
+        await this.getAllChilds()
 
     },
     methods: {
@@ -57,6 +63,7 @@ export default {
         },
         async isAuthenticated(){
             let auth = false
+            console.log("accessToken:", this.$session.get('accessToken'))
             try {
                 await fetch("https://beobachtungsboegen.herokuapp.com/auth", {
                     headers: {
@@ -85,14 +92,25 @@ export default {
             this.$session.remove("username")
             this.$session.remove("accessToken")
             this.$session.remove("refreshToken")
-            this.$router.push("beobachtungsboegen/login")
+            this.$router.push("/")
         },
         async saveChanges(){
             console.log("save!!")
         },
-        showKind(event){
-            this.showBeobachtungsbogen = true
-            this.kind = event
+        async getAllChilds(){
+            await fetch("https://beobachtungsboegen.herokuapp.com/children", {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${this.$session.get('accessToken')}`
+                }
+                
+            })
+            .then(res => res.json())
+            .then(data => {
+                this.kinderDaten = data
+            })
+            console.log("kinderDaten:",this.kinderDaten)
         }
     },
 }

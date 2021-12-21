@@ -1,6 +1,8 @@
 <template>
-    <div class="beobachtungsbogen" :key="`rerenderer-${rerender}`">
-        <h1> {{ kind }} </h1>
+    <div class="beobachtungsbogen" :class="{
+        overview: (mode === 'overview'),
+        edit: (mode === 'edit')
+    }" :key="`rerenderer-${kindID}-${rerender}`">
         <div v-for="(bildungsbereich, name) in bildungsbereiche" :key="name" class="bildungsbereich">
             <h2 class="bereichTitle" 
             :class="{
@@ -21,9 +23,9 @@
                     vier: (  name === 'Körperkontrolle'),
                     fünf: (  name === 'Emotionalität, Soziales Miteinander' ),
                     sechs: ( name === 'Denken'),
-                    nichtErfuellt: (eintrag['erfüllt'] === 0 || !eintrag['erfüllt']),
-                    teilsErfuellt: (eintrag['erfüllt'] === 1),
-                    vollErfuellt: (eintrag['erfüllt'] === 2),
+                    nichtErfuellt: (eintrag['erfuellt'] === 0 || !eintrag['erfuellt']),
+                    teilsErfuellt: (eintrag['erfuellt'] === 1),
+                    vollErfuellt: (eintrag['erfuellt'] === 2),
                     change: change
                 }" >
                 <span class="id"> {{ eintrag.id }} </span>
@@ -34,47 +36,52 @@
 </template>
 
 <script>
+import jsondata from "../../json/bildungsbereiche.json"
+
 export default {
     name: "Beobachtungsbogen",
     data() {
         return {
             rerender: 0,
-            kindData: {}
+            kindData: {},
+            bildungsbereiche: JSON.parse(JSON.stringify(jsondata.Bildungsbereiche)),
+            showBeschreibungen: false,
+            change: false,
         }
     },
     props: {
         kind: String,
-        bildungsbereiche: Object,
-        showBeschreibungen: Boolean,
-        change: Boolean,
+        observations: Object,
+        kindID: String,
+        mode: String
     },
     async mounted(){
-        for(const bildungsbereich of Object.entries(this.bildungsbereiche)){
-            for(let eintrag of Object.entries(bildungsbereich)){
-                eintrag["erfüllt"] = 0
-            }
+        console.log(this.bildungsbereiche)
+        console.log(this.observations)
+        for(let [, bildungsbereich] of Object.entries(this.bildungsbereiche)){
+            bildungsbereich.forEach(element => {
+                if(this.observations[element.id]){
+                    element['erfuellt'] = this.observations[element.id]
+                } else {
+                    element['erfuellt'] = 0
+                }
+            });
         }
-        try {
-            await fetch(`https://beobachtungsboegen.herokuapp.com/child/${this.kind}`, {
-                method: "GET",
-                Authorization: `Bearer ${this.$session.get("accessToken")}`
-            })
-            .then(res => console.log(res))
-            .then(data => this.kindData = data)
-            console.log(this.kindData)
-        } catch(e) {
-           console.log(e) 
+        if(this.mode==="edit"){
+            this.showBeschreibungen = true
+            this.change = true
         }
+        this.rerender +=1
     },
     methods: {
         toggleEintragClr(name, id){
             if(!this.change){return 0}
-            let entry = this.bildungsbereiche[name].find(e => e['id'] === id)['erfüllt']
+            let entry = this.bildungsbereiche[name].find(e => e['id'] === id)['erfuellt']
             if(entry){
                 switch(entry){
-                    case 0: this.bildungsbereiche[name].find(e => e['id'] === id)['erfüllt'] = 1; break;
-                    case 1: this.bildungsbereiche[name].find(e => e['id'] === id)['erfüllt'] = 2; break;
-                    case 2: this.bildungsbereiche[name].find(e => e['id'] === id)['erfüllt'] = 0; break;
+                    case 0: this.bildungsbereiche[name].find(e => e['id'] === id)['erfuellt'] = 1; break;
+                    case 1: this.bildungsbereiche[name].find(e => e['id'] === id)['erfuellt'] = 2; break;
+                    case 2: this.bildungsbereiche[name].find(e => e['id'] === id)['erfuellt'] = 0; break;
                 }
             } else {
                 this.bildungsbereiche[name].find(e => e['id'] === id)['erfüllt'] = 1;
@@ -92,12 +99,12 @@ export default {
 <style scoped>
 * {
     --clr-bb-000: white;
-    --clr-bb-100: red;
-    --clr-bb-200: lightgreen;
-    --clr-bb-300: orange;
-    --clr-bb-400: blue;
-    --clr-bb-500: pink;
-    --clr-bb-600: lightblue;
+    --clr-bb-100: rgb(255, 73, 73);
+    --clr-bb-200: rgb(174, 243, 174);
+    --clr-bb-300: rgb(247, 194, 96);
+    --clr-bb-400: rgb(76, 76, 248);
+    --clr-bb-500: rgb(253, 207, 215);
+    --clr-bb-600: rgb(187, 223, 235);
 }
 .eins {
     --clr-bb-eintrag: var(--clr-bb-100);
@@ -135,6 +142,9 @@ export default {
 
 
 
+.overview {
+    font-size: 50%;
+}
 
 
 
@@ -144,7 +154,7 @@ export default {
     background: var(--clr-bb-eintrag);
     display: inline-block;
     font-weight: bold;
-    padding: 5px;
+    padding: .25em;
     margin: .25ch;
     border: 1px solid black;
     border-radius: 3px;
@@ -160,6 +170,7 @@ export default {
     display: inline-block;
     max-width: 40ch;
     border: 1px solid transparent;
+    vertical-align: top;
 }
 .beschreibung {
     font-size: .7rem;
