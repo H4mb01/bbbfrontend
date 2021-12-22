@@ -1,6 +1,6 @@
 <template>
     <div class="bearbeiten" :key="rerenderer" >
-        <h3>{{kinderDaten.firstName}}</h3>
+        <h1>{{kinderDaten.firstName}}</h1>
         <div class="grid main">
             <div class="settings">
                 <input type="checkbox" name="beschreibungen" id="beschreibungen" v-model="beschreibungen">
@@ -69,6 +69,7 @@ export default {
             })
             if (result.status === 200){
                 console.log("save successful")
+                this.$router.push("/beobachtungsboegen")
             } else {
                 console.log("save not successful")
             }

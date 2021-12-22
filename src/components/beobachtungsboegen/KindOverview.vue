@@ -4,7 +4,9 @@
             <h3>{{data.firstName}}</h3>
             <button @click="edit()" >bearbeiten</button>
         </div>
-        <Beobachtungsbogen :kind="data.firstName" :kindID="data._id" :observations="data.observations" mode="overview" :change="change" />
+        <div class="bogen">
+            <Beobachtungsbogen :kind="data.firstName" :kindID="data._id" :observations="data.observations" mode="overview" :change="change" />
+        </div>
     </div>
 </template>
 
@@ -41,6 +43,13 @@ export default {
 .kindOverview {
     border-bottom: 1px solid black;
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 1fr minmax(300px, 6fr);
+    grid-gap: 1rem;
+}
+.head {
+    margin-left: auto;
+}
+.bogen {
+    margin-right: auto;
 }
 </style>
