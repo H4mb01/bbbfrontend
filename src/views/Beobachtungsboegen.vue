@@ -2,7 +2,9 @@
     <div class="beobachtungsboegen">
         <h1 v-if="authenticated" > {{ username }}s Beobachtungsbögen</h1>
         <div v-if="authenticated" class="content">
-            <h2>Hallo {{username}}, das hier sind deine Kinder:</h2>
+            <h2 class="begruessung">Hallo {{username}}, das hier sind deine Kinder:
+                <button class="neu" @click="createNewChild" >+ Neu</button>
+            </h2>
             <KindOverview v-for="kind in kinderDaten" :key="`${username}s-kind-${kind._id}`" :data="kind" />
 
 
@@ -25,6 +27,9 @@
 import KindOverview from "../components/beobachtungsboegen/KindOverview.vue"
 
 import jsondata from "../json/bildungsbereiche.json"
+
+import shared from "../auth.js"
+
 export default {
     name: "beobachtungsboegen",
     components: {
@@ -44,40 +49,16 @@ export default {
             kinderDaten: {}
         }
     },
+    created(){
+        this.authenticate = shared.authenticate
+    },
     async mounted() {
-        if(this.$session.get("accessToken")){
-            this.accessToken = this.$session.get("accessToken")
-        }
-        const auth = await this.isAuthenticated()
-        this.authenticated = auth
-        if(auth === false){
-            this.$router.push("/login")
-        }
+        this.authenticated = await this.authenticate()
         this.username = this.$session.get("username")
         await this.getAllChilds()
 
     },
     methods: {
-        setTokenToSessionStorage(token){
-            this.$session.set("accessToken", token.accessToken)
-        },
-        async isAuthenticated(){
-            let auth = false
-            console.log("accessToken:", this.$session.get('accessToken'))
-            try {
-                await fetch("https://beobachtungsboegen.herokuapp.com/auth", {
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Authorization": `Bearer ${this.$session.get('accessToken')}`
-                    }
-                })
-                .then(res => res.json())
-                .then(data => auth = data.auth)
-            } catch (e) {
-                console.log(e)
-            }
-            return auth
-        },
         async logout() {
             console.log("logging out", this.$session.get('username'))
             await fetch("https://beobachtungsboegen.herokuapp.com/logout", {
@@ -111,6 +92,9 @@ export default {
                 this.kinderDaten = data
             })
             console.log("kinderDaten:",this.kinderDaten)
+        },
+        async createNewChild() {
+            this.$router.push("/neu")
         }
     },
 }

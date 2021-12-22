@@ -87,6 +87,7 @@ export default {
             } else {
                 this.bildungsbereiche[name].find(e => e['id'] === id)['erfuellt'] = 1;
             }
+            this.$emit("change-obs", this.bildungsbereiche)
             this.rerender +=1;
         }
     }
@@ -154,6 +155,7 @@ export default {
 .eintrag {
     background: var(--clr-bb-eintrag);
     display: inline-block;
+    position: relative;
     font-weight: bold;
     padding: .25em;
     margin: .25ch;
@@ -173,8 +175,16 @@ export default {
     border: 1px solid transparent;
     vertical-align: top;
 }
-.beschreibung {
+.list .id{
+    position: absolute;
+    height: 100%;
+    top: center;
+    left: .25rem;
+}
+.list .beschreibung {
+    display: inline-block;
     font-size: .7rem;
+    margin-left: 2rem;
 }
 .list {
     width: 90%;

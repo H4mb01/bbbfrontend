@@ -6,6 +6,7 @@ import Beobachtungsboegen from "../views/Beobachtungsboegen.vue"
 import Login from "../views/Login.vue"
 import Register from "../views/Register.vue"
 import Bearbeiten from "../views/Bearbeiten.vue"
+import Neu from "../views/Neu.vue"
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,11 @@ const routes = [
     path: "/register",
     name: "Register",
     component: Register
+  },
+  {
+    path: "/neu",
+    name: "Neu",
+    component: Neu
   },
   {
     path: "/beobachtungsboegen/:kindID",
