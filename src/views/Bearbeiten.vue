@@ -1,6 +1,11 @@
 <template>
     <div class="bearbeiten">
-        <Beobachtungsbogen :observations="kinderDaten.observations" mode="edit" />
+        <input type="checkbox" name="beschreibungen" id="beschreibungen" v-model="beschreibungen">
+        <label for="beschreibungen">
+            <span v-if="beschreibungen">Beschreibungen ausblenden</span>
+            <span v-else>Beschreibungen einblenden</span>
+        </label>
+        <Beobachtungsbogen :observations="kinderDaten.observations" :mode="mode" :showBeschreibungen="beschreibungen" />
     </div>
 </template>
 
@@ -13,7 +18,9 @@ export default {
     },
     data(){
         return {
-            kinderDaten: {}
+            kinderDaten: {},
+            mode: "edit",
+            beschreibungen: false
         }
     },
     methods: {

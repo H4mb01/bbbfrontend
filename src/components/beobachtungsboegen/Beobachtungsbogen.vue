@@ -26,7 +26,8 @@
                     nichtErfuellt: (eintrag['erfuellt'] === 0 || !eintrag['erfuellt']),
                     teilsErfuellt: (eintrag['erfuellt'] === 1),
                     vollErfuellt: (eintrag['erfuellt'] === 2),
-                    change: change
+                    change: change,
+                    list: showBeschreibungen && eintrag.beschreibung
                 }" >
                 <span class="id"> {{ eintrag.id }} </span>
                 <span class="beschreibung" v-if="showBeschreibungen"> {{ eintrag.beschreibung }} </span>
@@ -45,15 +46,14 @@ export default {
             rerender: 0,
             kindData: {},
             bildungsbereiche: JSON.parse(JSON.stringify(jsondata.Bildungsbereiche)),
-            showBeschreibungen: false,
-            change: false,
         }
     },
     props: {
         kind: String,
         observations: Object,
         kindID: String,
-        mode: String
+        mode: String,
+        showBeschreibungen: Boolean,
     },
     async mounted(){
         console.log(this.bildungsbereiche)
@@ -67,11 +67,12 @@ export default {
                 }
             });
         }
-        if(this.mode==="edit"){
-            this.showBeschreibungen = true
-            this.change = true
-        }
         this.rerender +=1
+    },
+    computed: {
+        change: function () {
+            return this.mode === "edit" ? true : false
+        }
     },
     methods: {
         toggleEintragClr(name, id){
@@ -84,7 +85,7 @@ export default {
                     case 2: this.bildungsbereiche[name].find(e => e['id'] === id)['erfuellt'] = 0; break;
                 }
             } else {
-                this.bildungsbereiche[name].find(e => e['id'] === id)['erfüllt'] = 1;
+                this.bildungsbereiche[name].find(e => e['id'] === id)['erfuellt'] = 1;
             }
             this.rerender +=1;
         }
@@ -174,5 +175,9 @@ export default {
 }
 .beschreibung {
     font-size: .7rem;
+}
+.list {
+    width: 90%;
+    text-align: left;
 }
 </style>

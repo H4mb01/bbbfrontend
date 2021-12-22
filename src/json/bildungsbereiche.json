@@ -11,761 +11,761 @@
             },
             {
                 "id": 3,
-                "beschreibung": ""
+                "beschreibung": "Nimmt Blickkontakt auf"
             },
             {
                 "id": 4,
-                "beschreibung":""
+                "beschreibung":"Erkennt Farbunterschiede und starke Kontraste"
             },
             {
                 "id": 5,
-                "beschreibung":""
+                "beschreibung":"Reagiert auf Ansprache mit aktiver Bewegung"
             },
             {
                 "id": 6,
-                "beschreibung":""
+                "beschreibung":"Nimmt Bewegung wahr"
             },
             {
                 "id": 7,
-                "beschreibung":""
+                "beschreibung":"Verfolgt gehende Personen"
             },
             {
                 "id": 8,
-                "beschreibung":""
+                "beschreibung":"Sieht hingefallenen Gegenständen nach"
             },
             {
                 "id": 9,
-                "beschreibung":""
+                "beschreibung":"Beobachtet seine Hände"
             },
             {
                 "id": 10,
-                "beschreibung":""
+                "beschreibung":"Bevorzugt Spielzeug"
             },
             {
                 "id": 11,
-                "beschreibung":""
+                "beschreibung":"Erkennt Bezugspersonen"
             },
             {
                 "id": 12,
-                "beschreibung":""
+                "beschreibung":"Stoppt Weinen bei Zuspruch und Zuwendung"
             },
             {
                 "id": 13,
-                "beschreibung":""
+                "beschreibung":"Reagiert auf 'Komm!'"
             },
             {
                 "id": 14,
-                "beschreibung":""
+                "beschreibung":"Reagiert auf Flüstern mit Drehung des Kopfes"
             },
             {
                 "id": 15,
-                "beschreibung":""
+                "beschreibung":"Sieht rollendem Ball nach"
             },
             {
                 "id": 16,
-                "beschreibung":""
+                "beschreibung":"Beschäftigt sich mit Spielzeug"
             },
             {
                 "id": 17,
-                "beschreibung":""
+                "beschreibung":"Erkennt Personen von Weitem"
             },
             {
                 "id": 18,
-                "beschreibung":""
+                "beschreibung":"Zeigt auf Personen, wenn es ihre Namen hört"
             },
             {
                 "id": 19,
-                "beschreibung":""
+                "beschreibung":"Reagiert auf seinen Namen"
             },
             {
                 "id": 20,
-                "beschreibung":""
+                "beschreibung":"Schüttelt Kopf als Verneinung"
             },
             {
                 "id": 21,
-                "beschreibung":""
+                "beschreibung":"Beobachtet andere beim Spiel"
             },
             {
                 "id": 22,
-                "beschreibung":""
+                "beschreibung":"Zeigt auf benannte Körperteile"
             },
             {
                 "id": 23,
-                "beschreibung":""
+                "beschreibung":"Erkennt sein Gegenüber im Spiegel"
             },
             {
                 "id": 24,
-                "beschreibung":""
+                "beschreibung":"Erkennt Geräusche seiner Umwelt"
             },
             {
                 "id": 25,
-                "beschreibung":""
+                "beschreibung":"Versteht mehrere Anweisungen und kann sie hintereinander befolgen"
             }
         ],
         "Sprechen": [
             {
                 "id": 26,
-                "beschreibung":""
+                "beschreibung":"Lallt Monologe, brabbelt, erzeugt Geräusche"
             },
             {
                 "id": 27,
-                "beschreibung":""
+                "beschreibung":"Versucht, über Lautäußerung zu kommunizieren"
             },
             {
                 "id": 28,
-                "beschreibung":""
+                "beschreibung":"Aktive Mimik"
             },
             {
                 "id": 29,
-                "beschreibung":""
+                "beschreibung":"Steckt die Zunge zwischen die Lippen und prustet"
             },
             {
                 "id": 30,
-                "beschreibung":""
+                "beschreibung":"Nutzt einzelne Vokale und versucht, Betonungen nachzuahmen"
             },
             {
                 "id": 31,
-                "beschreibung":""
+                "beschreibung":"Schreit laut zur Unmutsäußerung"
             },
             {
                 "id": 32,
-                "beschreibung":""
+                "beschreibung":"Antwortet durch Laute"
             },
             {
                 "id": 33,
-                "beschreibung":""
+                "beschreibung":"Versucht, über Namensnennung zu kommunizieren"
             },
             {
                 "id": 34,
-                "beschreibung":""
+                "beschreibung":"Erste willentliche Sprachäußerungen; produziert Silbenketten"
             },
             {
                 "id": 35,
-                "beschreibung":""
+                "beschreibung":"Kann Wörter imitieren"
             },
             {
                 "id": 36,
-                "beschreibung":""
+                "beschreibung":"Lässt sich Texte vorlesen"
             },
             {
                 "id": 37,
-                "beschreibung":""
+                "beschreibung":"Versteht und befolgt Anweisungen"
             },
             {
                 "id": 38,
-                "beschreibung":""
+                "beschreibung":"Verwendet Silben, z.B. 'Baba' für Ball oder 'Wauwau' für Hund"
             },
             {
                 "id": 39,
-                "beschreibung":""
+                "beschreibung":"Spricht Personen und Objekten zu"
             },
             {
                 "id": 40,
-                "beschreibung":""
+                "beschreibung":"Erkennt Fingerspiele, versucht, mitzusprechen"
             },
             {
                 "id": 41,
-                "beschreibung":""
+                "beschreibung":"Verwendet mindestens fünf Wörter"
             },
             {
                 "id": 42,
-                "beschreibung":""
+                "beschreibung":"Kann Personen und Dinge benennen (mindestens drei)"
             },
             {
                 "id": 43,
-                "beschreibung":""
+                "beschreibung":"Wartet auf Antwort oder Bestätigung"
             },
             {
                 "id": 44,
-                "beschreibung":""
+                "beschreibung":"Spricht in Zweiwortsätzen"
             },
             {
                 "id": 45,
-                "beschreibung":""
+                "beschreibung":"Äußert verständlich einen Wunsch"
             },
             {
                 "id": 46,
-                "beschreibung":""
+                "beschreibung":"Nennt sich beim Vornamen"
             },
             {
                 "id": 47,
-                "beschreibung":""
+                "beschreibung":"Sagt: 'da', 'bitte', 'weg', 'danke'"
             },
             {
                 "id": 48,
-                "beschreibung":""
+                "beschreibung":"Kann 50 Wörter sprechen"
             },
             {
                 "id": 49,
-                "beschreibung":""
+                "beschreibung":"Spricht beim Spielen von sich selbst"
             },
             {
                 "id": 50,
-                "beschreibung":""
+                "beschreibung":"Kann Tätigkeiten auf Bildern zeigen"
             },
             {
                 "id": 51,
-                "beschreibung":""
+                "beschreibung":"Beschreibt, was es holen soll (z.B.: einen Teller und eine Tasse)"
             },
             {
                 "id": 52,
-                "beschreibung":""
+                "beschreibung":"Äußert sich konkret"
             },
             {
                 "id": 53,
-                "beschreibung":""
+                "beschreibung":"Reagiert auf Ansprache von hinten"
             },
             {
                 "id": 54,
-                "beschreibung":""
+                "beschreibung":"Kann kurze Sätze nachsprechen"
             }
         ],
         "Bewegung, Geschicklichkeit": [
             {
                 "id": 55,
-                "beschreibung":""
+                "beschreibung":"Spielt mit seinen Fingern"
             },
             {
                 "id": 56,
-                "beschreibung":""
+                "beschreibung":"Greift in Richtung eines Objekts"
             },
             {
                 "id": 57,
-                "beschreibung":""
+                "beschreibung":"Einhändiges, dann beidhändiges Greifen"
             },
             {
                 "id": 58,
-                "beschreibung":""
+                "beschreibung":"Schließt Hand ums Objekt"
             },
             {
                 "id": 59,
-                "beschreibung":""
+                "beschreibung":"Erkundet Gegenstände mit seinen Händen"
             },
             {
                 "id": 60,
-                "beschreibung":""
+                "beschreibung":"Steckt Dinge in den Mund"
             },
             {
                 "id": 61,
-                "beschreibung":""
+                "beschreibung":"Greift und lässt los"
             },
             {
                 "id": 62,
-                "beschreibung":""
+                "beschreibung":"Gibt Gegenstand von Hand zu Hand"
             },
             {
                 "id": 63,
-                "beschreibung":""
+                "beschreibung":"Trinkt allein aus einer Tasse"
             },
             {
                 "id": 64,
-                "beschreibung":""
+                "beschreibung":"Will ohne fremde Hilfe mit dem Löffel essen"
             },
             {
                 "id": 65,
-                "beschreibung":""
+                "beschreibung":"Kann Gegenstände in einen Behälter füllen und herausholen"
             },
             {
                 "id": 66,
-                "beschreibung":""
+                "beschreibung":"Kritzelt auf Papier"
             },
             {
                 "id": 67,
-                "beschreibung":""
+                "beschreibung":"Schiebt Bewegungsspielzeug hin und her"
             },
             {
                 "id": 68,
-                "beschreibung":""
+                "beschreibung":"Beschäftigt sicht selbst mit Spielen"
             },
             {
                 "id": 69,
-                "beschreibung":""
+                "beschreibung":"Räumt Gegenstände aus und ein"
             },
             {
                 "id": 70,
-                "beschreibung":""
+                "beschreibung":"Wirft Gegenstände weg"
             },
             {
                 "id": 71,
-                "beschreibung":""
+                "beschreibung":"zeigt 'Bitte, bitte'"
             },
             {
                 "id": 72,
-                "beschreibung":""
+                "beschreibung":"Greift Gegenstände im Pinzettengriff"
             },
             {
                 "id": 73,
-                "beschreibung":""
+                "beschreibung":"kann Gegenstände zusammenstecken"
             },
             {
                 "id": 74,
-                "beschreibung":""
+                "beschreibung":"Beginnt mit Lottospielen"
             },
             {
                 "id": 75,
-                "beschreibung":""
+                "beschreibung":"Packt Gegenstände aus Papier aus"
             },
             {
                 "id": 76,
-                "beschreibung":""
+                "beschreibung":"Baut Turm aus zwei Teilen"
             },
             {
                 "id": 77,
-                "beschreibung":""
+                "beschreibung":"Kann selbstständig essen und trinken"
             },
             {
                 "id": 78,
-                "beschreibung":""
+                "beschreibung":"Öffnet Reißverschluss"
             },
             {
                 "id": 79,
-                "beschreibung":""
+                "beschreibung":"Steckt z.B. eine kleine Perle in einen engen Flaschenhals"
             },
             {
                 "id": 80,
-                "beschreibung":""
+                "beschreibung":"Blättert Buchseiten gezielt um"
             },
             {
                 "id": 81,
-                "beschreibung":""
+                "beschreibung":"Isst alleine mit dem Löffel"
             },
             {
                 "id": 82,
-                "beschreibung":""
+                "beschreibung":"Baut Turm aus mehreren Teilen"
             },
             {
                 "id": 83,
-                "beschreibung":""
+                "beschreibung":"Reiht Perlen auf Draht auf"
             },
             {
                 "id": 84,
-                "beschreibung":""
+                "beschreibung":"Faltet Papier"
             },
             {
                 "id": 85,
-                "beschreibung":""
+                "beschreibung":"Gießt in einen Becher ein"
             },
             {
                 "id": 86,
-                "beschreibung":""
+                "beschreibung":"Malt Rundformen"
             }
         ],
         "Körperkontrolle": [
             {
                 "id": 87,
-                "beschreibung":""
+                "beschreibung":"Hebt Kopf in Bauchlage"
             },
             {
                 "id": 88,
-                "beschreibung":""
+                "beschreibung":"Kann kräftig strampeln"
             },
             {
                 "id": 89,
-                "beschreibung":""
+                "beschreibung":"Hat Kopfkontrolle, wenn es auf dem Arm gehalten wird"
             },
             {
                 "id": 90,
-                "beschreibung":""
+                "beschreibung":"Handstütz in Bauchlage"
             },
             {
                 "id": 91,
-                "beschreibung":""
+                "beschreibung":"Hebt Kopf in den Rücken"
             },
             {
                 "id": 92,
-                "beschreibung":""
+                "beschreibung":"Vierfüßerstand"
             },
             {
                 "id": 93,
-                "beschreibung":""
+                "beschreibung":"Rollt in Bauchlage"
             },
             {
                 "id": 94,
-                "beschreibung":""
+                "beschreibung":"Robbt auf den Bauch"
             },
             {
                 "id": 95,
-                "beschreibung":""
+                "beschreibung":"Zieht sich hoch zum Stand"
             },
             {
                 "id": 96,
-                "beschreibung":""
+                "beschreibung":"Sitzt gut im Stuhl"
             },
             {
                 "id": 97,
-                "beschreibung":""
+                "beschreibung":"Setzt sich allein auf"
             },
             {
                 "id": 98,
-                "beschreibung":""
+                "beschreibung":"Geht in die Hocke, um Gegenstände aufzuheben"
             },
             {
                 "id": 99,
-                "beschreibung":""
+                "beschreibung":"Geht rückwärts"
             },
             {
                 "id": 100,
-                "beschreibung":""
+                "beschreibung":"Steigt eine Treppe hinauf, indem es sich festhält"
             },
             {
                 "id": 101,
-                "beschreibung":""
+                "beschreibung":"Kann gegen einen Ball treten, ohne umzufallen"
             },
             {
                 "id": 102,
-                "beschreibung":""
+                "beschreibung":"Kann frei gehen"
             },
             {
                 "id": 103,
-                "beschreibung":""
+                "beschreibung":"Klettert auf einen Stuhl"
             },
             {
                 "id": 104,
-                "beschreibung":""
+                "beschreibung":"Spielt in der Hocke"
             },
             {
                 "id": 105,
-                "beschreibung":""
+                "beschreibung":"Geht nachgesetzt treppauf"
             },
             {
                 "id": 106,
-                "beschreibung":""
+                "beschreibung":"Geht nachgesetzt treppab"
             },
             {
                 "id": 107,
-                "beschreibung":""
+                "beschreibung":"Geht sicher"
             },
             {
                 "id": 108,
-                "beschreibung":""
+                "beschreibung":"Kann einen Ball schießen"
             },
             {
                 "id": 109,
-                "beschreibung":""
+                "beschreibung":"Kann sicher rennen und stoppen"
             },
             {
                 "id": 110,
-                "beschreibung":""
+                "beschreibung":"Springt mit beiden Füßen vom Boden ab"
             },
             {
                 "id": 111,
-                "beschreibung":""
+                "beschreibung":"Hüpft über eine Linie"
             },
             {
                 "id": 112,
-                "beschreibung":""
+                "beschreibung":"Zeigt Bewegungsfreude"
             }
         ],
         "Emotionalität, Soziales Miteinander": [
             {
                 "id": 113,
-                "beschreibung":""
+                "beschreibung":"Zeigt soziale Reaktion, lächelt vertraute und fremde Personen an"
             },
             {
                 "id": 114,
-                "beschreibung":""
+                "beschreibung":"Hält festen Blickkontakt"
             },
             {
                 "id": 115,
-                "beschreibung":""
+                "beschreibung":"Schmiegt sich an Bezugsperson"
             },
             {
                 "id": 116,
-                "beschreibung":""
+                "beschreibung":"Reagiert auf Emotionen anderer"
             },
             {
                 "id": 117,
-                "beschreibung":""
+                "beschreibung":"Zeigt unterschiedliche Emotionen"
             },
             {
                 "id": 118,
-                "beschreibung":""
+                "beschreibung":"Lächelt häufig"
             },
             {
                 "id": 119,
-                "beschreibung":""
+                "beschreibung":"Kann durch Hochnehmen beruhigt werden"
             },
             {
                 "id": 120,
-                "beschreibung":""
+                "beschreibung":"Lautiert Geräusche"
             },
             {
                 "id": 121,
-                "beschreibung":""
+                "beschreibung":"Zeigt Emotionale Reaktion auf ein freundliches Gesicht"
             },
             {
                 "id": 122,
-                "beschreibung":""
+                "beschreibung":"Mag Körperkontakt"
             },
             {
                 "id": 123,
-                "beschreibung":""
+                "beschreibung":"Kann Emotionen ausdrücken"
             },
             {
                 "id": 124,
-                "beschreibung":""
+                "beschreibung":"Fühlt sich wohl bei seinen Handlungen"
             },
             {
                 "id": 125,
-                "beschreibung":""
+                "beschreibung":"Freut sich beim Spielen"
             },
             {
                 "id": 126,
-                "beschreibung":""
+                "beschreibung":"Zeigt Interesse an Kontakten"
             },
             {
                 "id": 127,
-                "beschreibung":""
+                "beschreibung":"Hebt die Arme zum Hochnehmen"
             },
             {
                 "id": 128,
-                "beschreibung":""
+                "beschreibung":"Zeigt Trotzreaktionen"
             },
             {
                 "id": 129,
-                "beschreibung":""
+                "beschreibung":"Ist angemessen aktiv"
             },
             {
                 "id": 130,
-                "beschreibung":""
+                "beschreibung":"Ist interessiert anseiner Umwelt"
             },
             {
                 "id": 131,
-                "beschreibung":""
+                "beschreibung":"Reagiert deutlich auf Interaktionsangebote"
             },
             {
                 "id": 132,
-                "beschreibung":""
+                "beschreibung":"Kann sich selbst z.B. auf einem Bild erkennen"
             },
             {
                 "id": 133,
-                "beschreibung":""
+                "beschreibung":"Initiiert bewusst Kontaktaufnahme"
             },
             {
                 "id": 134,
-                "beschreibung":""
+                "beschreibung":"Spielt parallel mit gleichaltrigen Kindern"
             },
             {
                 "id": 135,
-                "beschreibung":""
+                "beschreibung":"zeigt Streben nach Selbstständigkeit"
             },
             {
                 "id": 136,
-                "beschreibung":""
+                "beschreibung":"Kann sich von der Bezugserzieherin für kurze Zeit trennen"
             },
             {
                 "id": 137,
-                "beschreibung":""
+                "beschreibung":"Unterscheidet vertraute und nicht vertraute Personen"
             },
             {
                 "id": 138,
-                "beschreibung":""
+                "beschreibung":"Setzt Gefühle gegenüber Bezugspersonen bewusst ein"
             },
             {
                 "id": 139,
-                "beschreibung":""
+                "beschreibung":"Sucht Trost, wenn es traurig ist"
             },
             {
                 "id": 140,
-                "beschreibung":""
+                "beschreibung":"Verteidigt sein Eigentum"
             },
             {
                 "id": 141,
-                "beschreibung":""
+                "beschreibung":"Nimmt sich als eigenständige Person wahr"
             },
             {
                 "id": 142,
-                "beschreibung":""
+                "beschreibung":"Spielt kleine Alltagssituationen nach"
             },
             {
                 "id": 143,
-                "beschreibung":""
+                "beschreibung":"Sucht und hält Blickkontakt"
             },
             {
                 "id": 144,
-                "beschreibung":""
+                "beschreibung":"Nimmt Gefühle andere wahr und verhält sich empathis"
             },
             {
                 "id": 145,
-                "beschreibung":""
+                "beschreibung":"Ist sensibel für Lob und Tadel"
             },
             {
                 "id": 146,
-                "beschreibung":""
+                "beschreibung":"Sucht Aufmerksamkeit von Bezugspersonen"
             },
             {
                 "id": 147,
-                "beschreibung":""
+                "beschreibung":"Kann Begeisterung ausdrücken"
             },
             {
                 "id": 148,
-                "beschreibung":""
+                "beschreibung":"Sucht körperliche Nähe"
             },
             {
                 "id": 149,
-                "beschreibung":""
+                "beschreibung":"Kann schnell beruhigt werden"
             },
             {
                 "id": 150,
-                "beschreibung":""
+                "beschreibung":"Kann sich für kurze Zeit allein beschäftigen"
             },
             {
                 "id": 151,
-                "beschreibung":""
+                "beschreibung":"Kann mit Misserfolgen umgehen"
             },
             {
                 "id": 152,
-                "beschreibung":""
+                "beschreibung":"Begrüßt Bezugspersonen"
             },
             {
                 "id": 153,
-                "beschreibung":""
+                "beschreibung":"Hat eine altersgemäße Ausdauer"
             },
             {
                 "id": 154,
-                "beschreibung":""
+                "beschreibung":"Kann sich alleine beschäftigen"
             },
             {
                 "id": 155,
-                "beschreibung":""
+                "beschreibung":"Spielt gemeinsam mit anderen Kindern"
             },
             {
                 "id": 156,
-                "beschreibung":""
+                "beschreibung":"Freut sich, wenn es gelobt wird"
             },
             {
                 "id": 157,
-                "beschreibung":""
+                "beschreibung":"Trennt sich von der Bezugsperson"
             },
             {
                 "id": 158,
-                "beschreibung":""
+                "beschreibung":"Stellt sich kleinen Herausforderungen und sucht nach Lösungen"
             }
         ],
         "Denken": [
             {
                 "id": 159,
-                "beschreibung":""
+                "beschreibung":"Reagiert auf Geräusche"
             },
             {
                 "id": 160,
-                "beschreibung":""
+                "beschreibung":"Erkundet Gegenstände mit dem Mund"
             },
             {
                 "id": 161,
-                "beschreibung":""
+                "beschreibung":"Kann Gegenstände fixieren"
             },
             {
                 "id": 162,
-                "beschreibung":""
+                "beschreibung":"Kann Aufmerksamkeit wecken"
             },
             {
                 "id": 163,
-                "beschreibung":""
+                "beschreibung":"Beobachtet bewusst seine Umgebung"
             },
             {
                 "id": 164,
-                "beschreibung":""
+                "beschreibung":"Untersucht Gegenstände mit der Hand"
             },
             {
                 "id": 165,
-                "beschreibung":""
+                "beschreibung":"Zeigt Interesse an anderen Kindern"
             },
             {
                 "id": 166,
-                "beschreibung":""
+                "beschreibung":"baut Turm aus Bauklötzen"
             },
             {
                 "id": 167,
-                "beschreibung":""
+                "beschreibung":"Interessiert sich für Spielzeug"
             },
             {
                 "id": 168,
-                "beschreibung":""
+                "beschreibung":"Versteht, wenn man z.B. sagt: 'Gib mir den Ball!"
             },
             {
                 "id": 169,
-                "beschreibung":""
+                "beschreibung":"Benennt Körperteile"
             },
             {
                 "id": 170,
-                "beschreibung":""
+                "beschreibung":"Ordnet zwei Größen zu"
             },
             {
                 "id": 171,
-                "beschreibung":""
+                "beschreibung":"Unterscheidet eins und viele"
             },
             {
                 "id": 172,
-                "beschreibung":""
+                "beschreibung":"Zeigt ein Objekt auf Bildern"
             },
             {
                 "id": 173,
-                "beschreibung":""
+                "beschreibung":"Will helfen"
             },
             {
                 "id": 174,
-                "beschreibung":""
+                "beschreibung":"Hat bevorzugte Spielpartner"
             },
             {
                 "id": 175,
-                "beschreibung":""
+                "beschreibung":"Fordert Erwachsene zum Spielen auf"
             },
             {
                 "id": 176,
-                "beschreibung":""
+                "beschreibung":"kann für kurze Zeit konzentriert Spielen"
             },
             {
                 "id": 177,
-                "beschreibung":""
+                "beschreibung":"Nimmt zuvor gesehenes Spielzeug unter einem Tuch weg"
             },
             {
                 "id": 178,
-                "beschreibung":""
+                "beschreibung":"Kann einfaches Puzzle legen (zwei bis drei Teile)"
             },
             {
                 "id": 179,
-                "beschreibung":""
+                "beschreibung":"Wiederholt handlungen, um ein Ziel zu erreichen"
             },
             {
                 "id": 180,
-                "beschreibung":""
+                "beschreibung":"Ordnet Farben zu"
             },
             {
                 "id": 181,
-                "beschreibung":""
+                "beschreibung":"Wird aktiv, wenn es ein Spielzeug haben möchte, welches sich nicht in unmittelbarer Umgebung befindet"
             },
             {
                 "id": 182,
-                "beschreibung":""
+                "beschreibung":"Verwendet das Wort 'Nein' richtig"
             },
             {
                 "id": 183,
-                "beschreibung":""
+                "beschreibung":"Ordnet gleiche Gegenstände zu (Kugel, Würfel usw.)"
             },
             {
                 "id": 184,
-                "beschreibung":""
+                "beschreibung":"Zeigt Ideenreichtum, um an versteckte Dinge zu gelangen"
             },
             {
                 "id": 185,
-                "beschreibung":""
+                "beschreibung":"Versteht Mimik und Gestik entsprechend der Situation einzusetzen"
             },
             {
                 "id": 186,
-                "beschreibung":""
+                "beschreibung":"Spielt konzentriert Rollenspiele und setzt dabei eigene ideen und Lösungswege um"
             },
             {
                 "id": 187,
-                "beschreibung":""
+                "beschreibung":"Hat den Überblick in der Krippengruppe"
             },
             {
                 "id": 188,
-                "beschreibung":""
+                "beschreibung":"Erkennt Tätigkeiten auf Bildern und kann sie zeigen"
             },
             {
                 "id": 189,
-                "beschreibung":""
+                "beschreibung":"Überträgt Gelerntes auf neue Situationen"
             }
         ]
     }
